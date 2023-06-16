@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap'); 
+@font-face { 
+  font-family:'Tiempos';
+  src:url('https://nappy.co/public/fonts/tiempos/TiemposText-Bold.eot');
+  src:url('https://nappy.co/public/fonts/tiempos/TiemposText-Bold.eot?#iefix') format('embedded-opentype'), url('https://nappy.co/public/fonts/tiempos/TiemposText-Bold.woff2') format('woff2'), url('https://nappy.co/public/fonts/tiempos/TiemposText-Bold.woff') format('woff'), url('https://nappy.co/public/fonts/tiempos/TiemposText-Bold.ttf') format('truetype'), url('https://nappy.co/public/fonts/tiempos/TiemposText-Bold.svg#TiemposText-Bold') format('svg');
+  font-weight:bold;
+  font-style:normal;
+} 
+* { 
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box;
+} 
+
+body { 
+    margin:    0;
+    font-family:  'Montserrat', Helvetica, Arial, sans-serif; 
+    font-size:  16px !important; 
+    line-height:   1.42857143; 
+    color:  #000;
+    background-color:  #fff; 
+    height:  100%;
+    font-weight: 400; 
+} 
+
+html { 
+    font-family:   sans-serif; 
+    -webkit-text-size-adjust:   100%; 
+    -ms-text-size-adjust:   100%;
+    font-size:  10px; 
+    -webkit-tap-highlight-color:  rgba(0,0,0,0);
+    height: 100%;
+} 
+
+.jumbotron { 
+    padding-top: 30px; 
+    padding-bottom: 30px; 
+    margin-bottom: 30px; 
+    color: inherit; 
+    background-color: #eee;
+} 
+
+@media screen and (min-width: 768px){ 
+  .jumbotron { 
+    padding-top: 48px; 
+    padding-bottom: 48px;
+  } 
+}     
+
+.index-header { 
+    background: url('ibiza-coves.jpg') no-repeat center center #D1D1D1; 
+    background-size: cover; 
+    position: relative; 
+    z-index: 0; 
+    background-image: url("ibiza-coves.jpg"); 
+    background-position-x: center; 
+    background-position-y: center; 
+    background-repeat-x: no-repeat; 
+    background-repeat-y: no-repeat; 
+    background-attachment: initial; 
+    background-origin: initial; 
+    background-clip: initial; 
+    background-color: rgb(209, 209, 209);
+} 
+
+.jumbotron_set { 
+    margin-bottom: 40px;
+} 
+
+@media screen and (min-width: 768px){ 
+  .jumbotron { 
+    padding: 110px 0;
+  } 
+}     
+
+:after,:before { 
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box;
+} 
+
+.jumbotron-cover:before { 
+    content: ''; 
+    position: absolute; 
+    width: 100%; 
+    height: 100%; 
+    background: rgba(5, 5, 5, .5); 
+    left: 0; 
+    top: 0; 
+    z-index: -1;
+} 
+
+:selection { 
+    background-color: #000; 
+    color: white;
+} 
+
+.container { 
+    padding-right: 15px; 
+    padding-left: 15px; 
+    margin-right: auto; 
+    margin-left: auto;
+} 
+
+@media (min-width: 768px){ 
+  .container { 
+    width: 750px;
+  } 
+}     
+
+@media (min-width: 992px){ 
+  .container { 
+    width: 970px;
+  } 
+}     
+
+@media (min-width: 1200px){ 
+  .container { 
+    width: 1170px;
+  } 
+}     
+
+.position-relative { 
+    position: relative;
+} 
+
+.jumbotron .container  { 
+    max-width: 100%;
+} 
+
+.btn-group-vertical > .btn-group:after ,.btn-group-vertical > .btn-group:before ,.btn-toolbar:after,.btn-toolbar:before,.clearfix:after,.clearfix:before,.container-fluid:after,.container-fluid:before,.container:after,.container:before,dd:after ,dd:before ,.form-group:after ,.form-group:before ,.modal-footer:after,.modal-footer:before,.modal-header:after,.modal-header:before,.nav:after,.nav:before,.navbar-collapse:after,.navbar-collapse:before,.navbar-header:after,.navbar-header:before,.navbar:after,.navbar:before,.pager:after,.pager:before,.panel-body:after,.panel-body:before,.row:after,.row:before { 
+    display: table; 
+    content: " ";
+} 
+
+.btn-group-vertical > .btn-group:after ,.btn-toolbar:after,.clearfix:after,.container-fluid:after,.container:after,dd:after ,.form-group:after ,.modal-footer:after,.modal-header:after,.nav:after,.navbar-collapse:after,.navbar-header:after,.navbar:after,.pager:after,.panel-body:after,.row:after { 
+    clear: both;
+} 
+
+.home-photoby { 
+    position: absolute; 
+    bottom: 20px; 
+    margin-left: 2%; 
+    color: #aaa; 
+    font-size: 16px; 
+    display: none;
+} 
+
+h1 { 
+    margin:     .67em 0; 
+    font-size:   36px;
+    font-family:  'Tiempos', Helvetica, San-serif;
+    font-weight:    500; 
+    line-height:    1.1; 
+    color:    inherit;
+    margin-top:   20px; 
+    margin-bottom:   10px;
+} 
+
+.subtitle-site { 
+    color: #FFF; 
+    text-align: center;
+} 
+
+.vivify { 
+    -webkit-animation-duration: .8s; 
+    -webkit-animation-fill-mode: both; 
+    animation-duration: .8s; 
+    animation-fill-mode: both;
+} 
+
+.delay-600 { 
+    -webkit-animation-delay: .6s; 
+    animation-delay: .6s;
+} 
+
+.jumbotron h1  { 
+    color: inherit;
+} 
+
+@media screen and (min-width: 768px){ 
+  .jumbotron h1  { 
+    font-size: 63px;
+  } 
+}     
+
+p { 
+    margin: 0 0 10px;
+} 
+
+.home-pop-search { 
+    margin: 30px 0 0 0;
+} 
+
+.jumbotron p  { 
+    margin-bottom:  15px; 
+    font-size:  16px; 
+    font-weight:  400;
+} 
+
+a { 
+    background-color:    transparent;
+    color:   #337ab7; 
+    text-decoration:   none;
+    outline:  none;
+    -webkit-transition: all .1s; 
+    transition: all .1s;
+} 
+
+a  { 
+    color: #000;
+} 
+
+.home-photoby a  { 
+    color: #aaa;
+} 
+
+a:active,a:hover { 
+    outline: 0;
+} 
+
+a:hover { 
+    color:  #000; 
+    text-decoration:  underline;
+} 
+
+.home-photoby a:hover  { 
+    color: #fff;
+} 
+
+.home-header { 
+    margin: 0 auto 30px; 
+    width: 90%; 
+    max-width: 600px; 
+    color: #fff; 
+    font-size: 40px; 
+    display: block; 
+    letter-spacing: 0.25px;
+} 
+
+.input-group { 
+    position: relative; 
+    display: table; 
+    border-collapse: separate;
+} 
+
+@media screen and (min-width: 768px){ 
+  .searchBar { 
+    width: 650px; 
+    margin: 0 auto;
+  } 
+}     
+
+.input-group-btn { 
+    display:   table-cell;
+    width:  1%; 
+    white-space:  nowrap;
+    vertical-align:  middle;
+    position: relative; 
+    font-size: 0; 
+} 
+
+input { 
+    margin:     0; 
+    font:     inherit; 
+    color:     inherit;
+    line-height:    inherit;
+    font-family:   inherit; 
+    font-size:   inherit; 
+    outline:  none;
+    border:  none;
+} 
+
+input  { 
+    box-shadow: none !important; 
+    -webkit-box-shadow: none !important; 
+    -moz-box-shadow: none !important;
+} 
+
+.form-control { 
+    display: block; 
+    width: 100%; 
+    height: 34px; 
+    padding: 6px 12px; 
+    font-size: 14px; 
+    line-height: 1.42857143; 
+    color: #555; 
+    background-color: #fff; 
+    background-image: none; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075); 
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075); 
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s; 
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s; 
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+} 
+
+.input-group .form-control  { 
+    position: relative; 
+    z-index: 2; 
+    float: left; 
+    width: 100%; 
+    margin-bottom: 0;
+} 
+
+.input-group-sm > .form-control  { 
+    height: 30px; 
+    padding: 5px 10px; 
+    font-size: 12px; 
+    line-height: 1.5; 
+    border-radius: 3px;
+} 
+
+.input-group .form-control  { 
+    display: table-cell;
+} 
+
+.input-group-sm > .form-control  { 
+    height:  50px; 
+    padding:  10px 20px 10px 0px;
+    font-size:  16px; 
+    line-height:  1.5; 
+    border-radius:  10px; 
+    color:  #000; 
+    border:  none;
+} 
+
+.input-group .form-control:last-child  { 
+    border-top-left-radius: 0; 
+    border-bottom-left-radius: 0;
+} 
+
+.home-pop-search a  { 
+    color: #aaa; 
+    font-size: 16px;
+} 
+
+.home-pop-search a:hover  { 
+    color: #fff;
+} 
+
+button { 
+    margin:       0; 
+    font:       inherit; 
+    color:       inherit;
+    overflow:      visible;
+    text-transform:     none;
+    -webkit-appearance:    button; 
+    cursor:    pointer;
+    font-family:   inherit; 
+    font-size:   inherit; 
+    line-height:   inherit;
+    outline:  none;
+    border:  none;
+} 
+
+.btn { 
+    display: inline-block; 
+    padding: 6px 12px; 
+    margin-bottom: 0; 
+    font-size: 14px; 
+    font-weight: 400; 
+    line-height: 1.42857143; 
+    text-align: center; 
+    white-space: nowrap; 
+    vertical-align: middle; 
+    -ms-touch-action: manipulation; 
+    touch-action: manipulation; 
+    cursor: pointer; 
+    -webkit-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
+    background-image: none; 
+    border: 1px solid transparent; 
+    border-radius: 4px;
+} 
+
+.input-group-btn > .btn  { 
+    position: relative;
+} 
+
+.input-group-sm > .input-group-btn > .btn  { 
+    height: 30px; 
+    padding: 5px 10px; 
+    font-size: 12px; 
+    line-height: 1.5; 
+    border-radius: 3px;
+} 
+
+.input-group-btn:first-child > .btn  { 
+    border-top-right-radius:  0; 
+    border-bottom-right-radius:  0;
+    margin-right: -1px;
+} 
+
+.input-group-sm > .input-group-btn > .btn  { 
+    height: 50px; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    line-height: 1.5; 
+    border-radius: 10px; 
+    color: #000; 
+    border: none;
+} 
+
+.input-group-btn:first-child > .btn  { 
+    margin-right: -10px;
+} 
+
+.input-group-sm > .input-group-btn > .btn  { 
+    padding: 10px 20px 5px;
+} 
+
+#btnSearch { 
+    background: white; 
+    color: black;
+} 
+
+.btn:hover { 
+    color: #333; 
+    text-decoration: none;
+} 
+
+.input-group-btn > .btn:active ,.input-group-btn > .btn:hover  { 
+    z-index: 2;
+} 
+
+.glyphicon { 
+    position: relative; 
+    top: 1px; 
+    display: inline-block; 
+    font-family: 'Glyphicons Halflings'; 
+    font-style: normal; 
+    font-weight: 400; 
+    line-height: 1; 
+    -webkit-font-smoothing: antialiased; 
+    -moz-osx-font-smoothing: grayscale;
+} 
+
+.glyphicon-search:before { 
+    content: "\e003";
+} 
+
+.searchBar .glyphicon-search:before  { 
+    content: "\e003"; 
+    font-size: 18px;
+} 
+
+
+/* These were inline style tags. Uses id+class to override almost everything */
+#style-rQIx9.style-rQIx9 {  
+   display: none;  
+}  
