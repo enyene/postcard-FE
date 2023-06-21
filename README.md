@@ -1,2 +1,1 @@
-# akpan-nappy-clone
-A repo for Akpan's nappy clone.
+# frontend for alx foundation capstone project
